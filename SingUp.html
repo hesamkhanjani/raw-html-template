@@ -1,0 +1,117 @@
+<!doctype html>
+	<html lang="fa" dir="rtl">
+		<head>
+			<meta charset="utf-8">
+			<title>singup</title>
+		</head>
+
+		<body>
+			<style>
+
+				@font-face {
+					font-family: 'vazir'; 
+					src: url('vazir/Vasir.woff2') format('woff2'),
+					url('vazir/Vasir.woff') format('woff'),
+					url('vazir/Vasir.eot') format('eot'),
+					url('vazir/Vasir.ttf') format('ttf')
+				}
+				* {
+					font-family: vazir , Tahoma;
+			
+					
+				}
+				
+				.login {
+					border: 2px solid white;
+					width: 300px;
+					margin: 50px auto;
+					background: white;
+					padding: 50px;
+					border-radius: 12px;
+					text-align: center;
+					background-color: burlywood;
+					color: black;
+				}
+				input[type=password]:hover,
+				input[type=email]:hover ,
+				input[type=text]:hover{
+					border: 2px solid #ccc;
+				}
+				input[type=password],
+				input[type=email],input[type=text]{
+					width: 100%;
+					border: 1px solid #ccc;
+					padding: 8px;
+					border: 2px solid white;
+					box-sizing: border-box;
+					border-radius:30px;
+				}
+				input[type=text]:focus{
+					outline: none;
+
+				}
+				
+				input[type=password]:focus,
+				input[type=email]:focus {
+					border: 1px solid white;
+					outline: none;
+				}
+				input[type=submit] {
+					background-color: black;
+					width: 50%;
+					border: none;
+					padding: 8px;
+					box-sizing: border-box;
+					color: white;
+					font-family: "Varela Round";
+					font-size: 1em;
+					text-transform: uppercase;
+					border-radius:30px;
+				}
+				input[type=submit]:hover {
+					background-color: rgb(31, 31, 31);
+					cursor: pointer;
+				}
+				input {
+					margin: 6px 0;
+				}
+				.login-link{
+					text-decoration:none;
+					color: blue;
+					font-size: 20px;
+				}
+				.login-link:hover{
+					color: cornflowerblue;
+				}
+			</style>
+			
+			
+			<div class="login">
+			<h3>ثبت نام</h3>
+				<!--  -->
+			<form  action="" method="post">
+				
+				<input type="text" dir="rtl" name="getName"
+					placeholder="نام"  />
+				
+				<input type="text" dir="rtl" name="lastName"
+					placeholder="نام خانوادگی" required />
+				
+				<input type="email" dir="rtl" name="getEmail" placeholder="ایمیل" pattern="[^ @]*@[^ @]*\.[^ @]{2,}" required />
+				
+				
+				
+				<input type="password" dir="rtl" name="getPassword" placeholder="رمز"  />
+				
+				<input type="submit" value="ارسال"/>
+				
+			</form>	
+			<a href="Login.html" class="login-link" >ورود</a>
+				
+				
+		</div>
+			
+			
+		</body>
+			
+			
